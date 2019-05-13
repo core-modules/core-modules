@@ -30,9 +30,6 @@ Provides a tiny API to keep management as simple as possible.
 ```javascript
 import { Model } from "@core-modules/orm"
 
-/**
- * Model: Person.
- */
 export class Person extends Model {
   
   actions = {
@@ -49,9 +46,6 @@ import { Action, Parser } from "@core-modules/orm"
 import { ApolloTransport } from "@core-modules/orm/transport/apollo"
 import gql from "graphql-tag"
 
-/**
- * Action: Read.
- */
 class Read extends Action {
   
   query = gql`
@@ -64,7 +58,6 @@ class Read extends Action {
     }
   `
   
-  // Compose transport layer.
   transport = new ApolloTransport({
     request: ({ client, ...opts }) => client.query({
       query: this.query,
@@ -72,7 +65,6 @@ class Read extends Action {
     })
   })
     
-  // Compose parse layer.
   parser = new Parser({
     id: "data.id",
     firstName: "data.firstName",
@@ -91,7 +83,6 @@ class Read extends Action {
 ```javascript
 import { Person } from "@orm/Person"
 
-// Read data.
 await new Person().read({
   options: {
     variables: {
