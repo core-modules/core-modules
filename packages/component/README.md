@@ -1,4 +1,4 @@
-# core-modules/component
+# @core-modules/component
 
 Component layer for building user interface.
 
