@@ -19,7 +19,7 @@ and manage data/models.
 Makes no stack assumptions. Applications may implement their own
 component system, transport system, etc.
 
-### Simpliticty
+### Simplicity
 
 Provides a tiny API to keep management as simple as possible.  
 
