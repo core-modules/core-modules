@@ -1,1 +1,8 @@
+# Files.
+*.log
+
+# Directories.
+node_modules
+
+# Roots.
 /tmp
