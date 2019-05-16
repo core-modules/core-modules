@@ -1,0 +1,10 @@
+{
+  "name": "@core-modules/data-sync",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "$CORE_MODULES_BIN/babel src --out-dir ./lib"
+  },
+  "devDependencies": {
+    "@core-modules/devtools": "file:../devtools"
+  }
+}
