@@ -1,0 +1,10 @@
+{
+  "name": "@core-modules/devtools",
+  "version": "0.0.1",
+  "description": "Core modules development environment.",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "babel-plugin-module-resolver": "^3.2.0"
+  }
+}
